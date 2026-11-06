@@ -1,0 +1,42 @@
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 32px;
+}
+
+.heading[data-align='center'] {
+  justify-content: center;
+  text-align: center;
+}
+
+.heading[data-align='center'] .description {
+  margin-inline: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.title {
+  color: var(--color-ink);
+  font-size: clamp(1.6rem, 3.2vw, 2.25rem);
+}
+
+.description {
+  max-width: 620px;
+  color: var(--color-ink-muted);
+  font-size: 1.02rem;
+}

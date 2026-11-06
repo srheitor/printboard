@@ -1,0 +1,65 @@
+{
+  "atualizadoEm": "2026-11-05T00:00:00.000Z",
+  "categorias": [
+    { "id": "caixas-maleta", "nome": "Caixas maleta" },
+    { "id": "caixas-pizza", "nome": "Caixas para pizza" }
+  ],
+  "produtos": [
+    {
+      "id": "caixa-maleta-hamburguer",
+      "nome": "Caixa maleta para hambúrguer",
+      "descricao": "Caixa com alça, impressa em cores com a arte da sua hamburgueria. Prática para o delivery e para o cliente levar, e cada entrega vira propaganda da sua marca.",
+      "categoria": "caixas-maleta",
+      "imagem": "img/produtos/maleta-hamburguer.jpg",
+      "preco": null,
+      "unidade": "unidade",
+      "pedidoMinimo": null,
+      "destaque": true,
+      "ativo": true,
+      "criadoEm": "2026-11-05T00:00:00.000Z",
+      "atualizadoEm": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "caixa-maleta-acai",
+      "nome": "Caixa maleta para açaí e sobremesas",
+      "descricao": "Caixa maleta personalizada para açaí, sorvetes e sobremesas. Espaço para logo, QR Code, redes sociais e formas de pagamento.",
+      "categoria": "caixas-maleta",
+      "imagem": "img/produtos/maleta-acai.jpg",
+      "preco": null,
+      "unidade": "unidade",
+      "pedidoMinimo": null,
+      "destaque": true,
+      "ativo": true,
+      "criadoEm": "2026-11-05T00:00:00.000Z",
+      "atualizadoEm": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "caixa-maleta-tematica",
+      "nome": "Caixa maleta com arte temática",
+      "descricao": "Leve o conceito da sua marca para a embalagem: impressão em todas as faces, inclusive na alça, para uma caixa que chama atenção.",
+      "categoria": "caixas-maleta",
+      "imagem": "img/produtos/maleta-tematica.jpg",
+      "preco": null,
+      "unidade": "unidade",
+      "pedidoMinimo": null,
+      "destaque": true,
+      "ativo": true,
+      "criadoEm": "2026-11-05T00:00:00.000Z",
+      "atualizadoEm": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "caixa-pizza-personalizada",
+      "nome": "Caixa para pizza personalizada",
+      "descricao": "Caixa oitavada impressa com a identidade da sua pizzaria, do logo simples à arte em tampa inteira.",
+      "categoria": "caixas-pizza",
+      "imagem": "img/produtos/caixas-pizza.jpg",
+      "preco": null,
+      "unidade": "unidade",
+      "pedidoMinimo": null,
+      "destaque": true,
+      "ativo": true,
+      "criadoEm": "2026-11-05T00:00:00.000Z",
+      "atualizadoEm": "2026-11-05T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+.footer {
+  margin-top: 96px;
+  padding-top: 56px;
+  background: var(--color-ink);
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.92rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 380px;
+}
+
+.heading {
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list a,
+.list span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.list a:hover {
+  color: #fff;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-block: 20px;
+  border-top: 1px solid rgb(255 255 255 / 12%);
+  font-size: 0.82rem;
+}
+
+.admin {
+  color: rgb(255 255 255 / 45%);
+  text-decoration: none;
+}
+
+.admin:hover {
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

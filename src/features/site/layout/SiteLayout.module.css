@@ -1,0 +1,32 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 900;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--color-whatsapp);
+  color: #fff;
+  box-shadow: 0 10px 24px -6px rgb(31 168 85 / 60%);
+  transition:
+    transform 0.15s,
+    background-color 0.15s;
+}
+
+.floating:hover {
+  background: var(--color-whatsapp-strong);
+  transform: scale(1.06);
+}

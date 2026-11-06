@@ -1,0 +1,49 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-ink);
+}
+
+.logo[data-inverted='true'] {
+  color: #fff;
+}
+
+.mark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  color: var(--color-brand);
+}
+
+.company {
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.65;
+}
+
+.image {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+.image[data-inverted='true'] {
+  filter: brightness(0) invert(1);
+}

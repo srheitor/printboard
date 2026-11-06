@@ -1,0 +1,43 @@
+.page {
+  padding-top: 48px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.search {
+  flex: 0 1 340px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 64px;
+  padding: 32px clamp(20px, 4vw, 40px);
+  border-radius: var(--radius-lg);
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.cta p {
+  color: rgb(255 255 255 / 70%);
+}
+
+@media (max-width: 600px) {
+  .search {
+    flex-basis: 100%;
+  }
+}

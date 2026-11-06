@@ -1,0 +1,50 @@
+.control {
+  padding: 4px;
+  gap: 2px;
+}
+
+.input {
+  text-align: center;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  padding: 0 4px;
+  min-height: 36px;
+}
+
+.suffix {
+  padding: 0 8px 0 0;
+  font-size: 0.85rem;
+}
+
+.step {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-surface-alt);
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.step:hover:not(:disabled) {
+  background: var(--color-border);
+}
+
+.step:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.lg .step {
+  width: 46px;
+  height: 46px;
+}
+
+.lg .input {
+  font-size: 1.15rem;
+  min-height: 46px;
+}

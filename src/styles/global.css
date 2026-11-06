@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Tokens de design — altere aqui para mudar a identidade visual do site todo.
+   ========================================================================== */
+:root {
+  --color-brand: #d81b72;
+  --color-brand-strong: #b0135b;
+  --color-brand-soft: #fde7f1;
+  --color-accent: #ffc400;
+  --color-accent-soft: #fff7d6;
+  --color-whatsapp: #1fa855;
+  --color-whatsapp-strong: #178a45;
+
+  --color-ink: #1b1a22;
+  --color-ink-muted: #5a5966;
+  --color-ink-subtle: #8a8996;
+  --color-bg: #f8f8fa;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0f0f5;
+  --color-border: #e5e5ec;
+  --color-border-strong: #cfcfda;
+
+  --color-success: #15803d;
+  --color-danger: #c62828;
+  --color-danger-soft: #fdecea;
+
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Poppins', 'Inter', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgb(27 26 34 / 6%);
+  --shadow-md: 0 6px 20px -6px rgb(27 26 34 / 14%);
+  --shadow-lg: 0 24px 48px -16px rgb(27 26 34 / 24%);
+
+  --container: 1180px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --header-h: 72px;
+
+  --focus-ring: 0 0 0 3px rgb(216 27 114 / 25%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-ink);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
